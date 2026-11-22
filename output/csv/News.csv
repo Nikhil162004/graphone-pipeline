@@ -1,0 +1,265 @@
+schemaVersion,recordType,source.name,source.url,content.title,content.publishedAt,content.freshnessBasis,content.summary,content.fullText,content.entities,content.extractionTier,collectedAt
+1.0,NEWS,The Verge AI,https://www.theverge.com/column/1039139/vibe-coding-gadgets-tv-camera,The vibe-coding revolution is coming to all the gadgets,2026-11-22T13:00:00Z,published-date,"This is The Stepback, a weekly newsletter breaking down one essential story from the tech world. For more on the vibe-hacking of everything, follow David Pierce. The Stepback arrives in our subscribers' inboxes on Sunday at 8AM ET. Opt in for The Stepback here. How it started Like so many things with AI, it's not [&#8230;]","Large language models can now redesign your TV and upgrade your camera for you. Is the physical world ready to be Claude Code-d?﻿
+
+This is The Stepback , a weekly newsletter breaking down one essential story from the tech world. For more on the vibe-hacking of everything, follow David Pierce . The Stepback arrives in our subscribers’ inboxes on Sunday at 8AM ET. Opt in for The Stepback here .
+
+Like so many things with AI, it’s not that large language models opened up some wholly new capability. For as long as there have been gadgets, a few users have been hacking, modding, jailbreaking, and tweaking them to their liking. What is new is that it’s easy now. People all over the world are discovering that they can use large language models to hack their hardware simply by prompting Claude Code or Codex to do it. It has led to a boom in developer-friendly gadgets and created a market for better software on just about every device you can think of.
+
+For one developer in India who goes by Gathin T, the whole thing started almost on a whim. “One afternoon, I was fiddling with my TV, and it was just really shitty,” he tells me. His was a set made by Xiaomi and running Android TV, with so many ads and so much interface chaos it was hard to even change inputs. And he got to thinking: If you can install another launcher on your Android phone, maybe you can do the same to your TV. “The first thing that came to mind was to remove the bloatware from the TV,” he says. “Then I thought, why not make it look better?”
+
+Gathin prompted Claude Code and discovered that with a couple of permissions tweaks and a toggle of USB debugging mode, his chatbot could control his TV as long as they were on the same Wi-Fi network. An hour and a half later, Gathin had redesigned his TV to his liking — no more onscreen ads, a simpler interface, easier access to his PlayStation on another input. He posted on X about what he’d done and promptly went viral. So Gathin put together his work, bought a domain, and launched CleanYourTV as a tool for helping other people solve their own television interfaces. It became one of the most popular repositories on GitHub, got thousands of pull requests and feature ideas, and inspired countless people to point their own chatbot at their big screen.
+
+Gathin is careful to note that the only TVs that work this easily are based on Android. (He has Claude Code-d his way through other operating systems, but those involve more explicit jailbreaking and rooting, so he’s more reluctant to share the process so widely.) But for vibe hackers everywhere, the good news is that Android kind of runs everything. From dishwashers to digital photo frames to luxury cars, even gadgets that don’t look like Android often run Android. Even when they don’t, odds are good that there’s another way in. If there’s a hidden API, your LLM can find it. If the firmware file lives on a website somewhere, your LLM can unpack it, explore it, and repackage it to your liking.
+
+Again, few of the technical capabilities here are new, and enterprising developers have been doing this kind of work for many years. Some have even been using AI for several years to make the work easier. But when Claude Code first had its “oh my gosh it works” moment in late 2025, developers began leaning on the tools even more — and non-developers began discovering they, too, could build software now. And over the course of 2026, more and more people began pointing that capability at their hardware.
+
+Now, it seems, all hardware is hacker hardware. Camera enthusiasts embraced the possibilities of vibe hacking as fast as anyone, using LLMs to repackage their camera software in all sorts of ways. Firmware hacks like Magic Lantern are a staple of the camera community, but suddenly it seems like everyone is using AI to add new recording capabilities, support higher resolutions, or even add new looks and color profiles to their shots. Many are using the tools to give their old gear new life; other, more enterprising vibe coders are pointing their bots at their brand-new hardware.
+
+The music world is being similarly upended . Budding musicians are turning cheap synths into powerful new kinds of gear, and a cheap gadget known as the M-Vave FM-1 has become a popular target for custom firmware and new features. M-Vave has even released an open-source firmware, embracing the hackers as other companies have tried to keep them out. The FM-1 is cheap, it’s easy to hack, and it’s raising questions about what higher-end manufacturers can even do to compete.
+
+Gamers, who are also using AI to decompile and mod the games they love, are using LLMs to add new features to their consoles. One vibe coder found a way to play PlayStation 2 discs on a PlayStation 5; lots of gamers have built scripts that allow them to use their favorite controllers on other devices.
+
+In the games world in particular, this has caused the industry to fight back. Game makers are looking for ways to protect their work from being decompiled and made available for free and on other platforms. Luke Dicken, a longtime gaming executive who was recently Take-Two’s head of artificial intelligence, recently predicted to Kotaku that the industry will start to embrace “more invasive DRM, platform-level solutions, and probably more of a push towards streaming solutions since nobody can decompile what they can’t get their hands on.” Hardware makers will push harder to lock down their systems; companies across the board will pursue legal action to protect their intellectual property.
+
+All this hardware access also creates new risks for users. When you install a vibe-coded version of your camera’s firmware, you are now well outside the bounds of what the camera manufacturer is equipped to help you solve. You might be stuck asking Claude to fix the problems Claude created. As Ritchie Roesch wrote recently at Fuji X Weekly , “It’s not so much if someone’s camera will become a permanent paperweight, it’s a matter of when and how many, and whether it will be yours.”
+
+The safer (and less litigious ) route for the enterprising vibe hacker lies in an entirely new kind of hardware. ESP32 modules, which package networking chips, microphones, speakers, and more into a simple and hacker-friendly package, are suddenly everywhere in hardware communities. (Think Raspberry Pis, but even cheaper and more versatile.) So sure, you can use Claude Code to jailbreak and de-Amazon your Kindle , but why do that when you can buy a device like the M5Stack PaperMono, an ESP32-based e-paper device you can make into whatever you want?
+
+ESP32 modules are perfectly suited to help you build the kind of hyper-specific device Apple or Samsung would never consider. With a few dollars and a few prompts, you can build a way to see real-time sea conditions , rig up a monitor for your whole DJ system , or just play Metal Gear Solid on the go. You can even have a dedicated device for your family’s shopping list.
+
+The arms race between device manufacturers and vibe hackers is only going to continue. As AI models get more powerful, and both the tools and their users get more sophisticated, it’ll be easier and easier for anyone to point their bot at their TV, their car, or their washing machine and see what happens. Some manufacturers will try their best to keep the hackers out; others will look for ways to safely embrace them. Some users will find incredible new functionality for their tech; others will find they’ve created extraordinarily large and expensive paperweights.
+
+Before long, we’re going to see a lot of ESP32 devices turned into more consumer-friendly hardware. Meta is already leading the charge with its Muse Charm and the Muse Gadgets program, through which you can either buy a nicely packaged ESP32 module or use your own to quickly spin up a dedicated AI device. This kind of gadget — just a simple computing module in a pretty box — is going to be everywhere.
+
+At the same time, we’re already seeing some vibe hackers turn into proper software vendors. Gathin, for instance, has spent a lot of time reckoning with the responsibility he feels for what happens when people use CleanYourTV to hack their televisions. He’s tweaked the prompts he shares to first take a backup of your TV’s software in order to make it easy to restore if something goes wrong, and to make note of every change it makes along the way. The CleanYourTV system also checks its progress as it goes and spins up agents to manually test if something has gone wrong, and Gathin hopes it’s increasingly foolproof.
+
+But it’s not foolproof. It might never be. Devices change all the time; every software update introduces new possibilities and new problems. So Gathin recommends the same thing I hear from vibe coders and vibe hackers all the time: Never give the bots access to something you can’t afford to lose. “Even for fiddling with stuff,” he says, “I have an external computer which runs through Linux. So I just use it like a sandbox environment to test things out.” If you’re going to try and vibe-hack your phone (which lots of people are doing ) or your computer (which lots of people are also doing ), do it carefully. And make lots of backups.",,deterministic,2026-11-22T15:26:47Z
+1.0,NEWS,TechCrunch AI,https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/,Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance,2026-11-21T21:37:10Z,published-date,Signal is limiting users' ability to take screenshots in both its Android and iOS apps.,"Signal announced Friday that it’s limiting users’ ability to take screenshots within the secure messaging app — a response to what President Meredith Whittaker described as the “existential threat” of operating systems that integrate agentic AI.
+
+Whittaker wrote that by giving AI agents the ability to “scan” the information on users’ screens, Windows, Android, and macOS/iOS “are undermining Signal’s ability to independently guarantee privacy.”
+
+“Now, in service of AI agentic capabilities, your sensitive data is being captured, stored, and made accessible to whatever local database or remote server an OS-level AI agent is using at that moment,” she said. “All of this is outside of Signal’s control once the data has been captured, and imperils the privacy of all the participants in a conversation.”
+
+Signal already sought to limit these risks by blocking screenshots of its Windows app by default. Now it’s adding similar restrictions in Android and iOS.
+
+That said, users can disable this setting if they wish, which Whittaker said would “break our privacy guarantees.” She also admitted this is an “incomplete” solution, as it doesn’t “address other more sneaky ways AI agents could potentially access application data.”",,deterministic,2026-11-22T15:26:46Z
+1.0,NEWS,TechCrunch AI,https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/,A tale of two Nvidias,2026-11-21T21:07:42Z,published-date,We got two very different pictures of Nvidia —  the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.,"We got two very different pictures of Nvidia this week, depending on whether you were focused on the company’s latest earnings report or the tech executives loudly calling for former CEO Jensen Huang’s return.
+
+On the latest episode of TechCrunch’s Equity podcast , Kirsten Korosec, Tim De Chant, and I discussed the latest news from the AI chipmaker, which reported soaring revenue and insisted that it has no plans for Huang to return.
+
+Kirsten described this as “the tale of two Nvidias this week,” with the company’s current executives assuring investors, “Hey, we’ve got this.” At the same time, “You’ve got Elon Musk and others out there really pushing to bring Jensen back , circulating a petition, Jensen himself saying that he’s prepared to come back.” (The company’s falling stock price certainly suggests that Wall Street isn’t feeling reassured.)
+
+Keep reading for a preview of our conversation, edited for length and clarity.
+
+Kirsten Korosec: Nvidia will no longer sell its H200 chips in China . This was coming directly from the interim CEO Colette Kress, and that coincides with the Trump administration also talking about closing off what we have discussed in the past, which is this idea of remote access — really closing and tightening all these restrictions [so] the chips can’t make it into China.
+
+What was happening is that data centers were being set up right outside, in countries like Malaysia and elsewhere, and then companies within China were remote accessing these chips, and so that’s now also been shut down.
+
+A lot is happening on the China front that is so much bigger than Nvidia, but Nvidia came out publicly and said, “Nope, we’re shutting this part down.” I’ll be very curious to see if this changes, maybe in the first half of 2027.
+
+Tim De Chant: I’d love to be a fly on the wall in some of these Trump administration conversations, because they were much more stringent in terms of export controls at the end of the first Trump administration, and that continued through the Biden administration, where they really restricted Nvidia’s ability to export chips to China. I think that something changed in the last couple of years that really opened Nvidia’s ability to sell in the country.
+
+Anthony Ha: One of the things that really surprised me as we were preparing for this episode was [learning that critics] of Nvidia’s stance towards China estimate that 20% of their business comes from China.
+
+And again, that’s not something you’re going to see directly in their financials, because that’s not direct sales to Chinese companies. But they’re saying, “A lot of the chips that are getting sold to companies in Malaysia or other companies in East Asia or Southeast Asia are going to end up [used by companies in] China eventually.” And so that could be — if Nvidia is really serious about this, I think this is something that’s very much in flux — that could actually be a pretty significant blow to their bottom line.
+
+Kirsten: Although Nvidia’s bottom line is doing just fine. In every possible way, their guidance was incredible. They beat expectations. They have a long pipeline.
+
+It was really interesting because you have that happening, and then you have all this noise happening in social media, and also a number of other tech conferences were happening this past week — Dealbook Summit, there [were] a few others in which you had the highest profile people that you can think of in the tech world commenting on Jensen [Huang], and Jensen himself commenting.
+
+So it’s like the tale of two Nvidias this week. You’ve got the earnings and the current executives really talking about, “Hey, we’ve got this.” In fact, that was the last line that Collette Kress said [on the earnings call]. And then at the exact same time, or in parallel, you’ve got Elon Musk and others out there really pushing to bring Jensen back, circulating a petition, Jensen himself saying that he’s prepared to come back. So it’s really quite the drama that we are definitely not done with, by the way.
+
+Anthony: Although I think that what the folks who’d like to see Jensen Huang come back would say is that this most recent quarter is the last quarter under him. This is the [last of the] good times that we’re seeing under him. And so we don’t know how well Nvidia will do without him.
+
+It seems like Nvidia’s public stance right now [on Huang’s possible return] is, “No, that’s not happening.” But Nvidia’s public stance a week and a half before that was, “We stand behind Jensen. We have every confidence in his leadership.”
+
+So depending on the various pressures on them, you can imagine that changing. I don’t know what it would take for that to happen. I don’t necessarily think it’s that likely, but I also don’t think that just because they’re saying it’s not happening now doesn’t mean it will never happen.
+
+Tim: Right, never say never. I do think that to some extent, their steadfastness and how quickly they shot down the petitions asking for Jensen to return suggests there’s maybe a little bit more going on behind the scenes than we know on the outside. So that’s probably something to watch in the coming weeks.
+
+Kirsten: I think that the board is trying to be in control here, and they don’t want to be forced into a decision because someone like Elon Musk is saying that it needs to happen. And so, even if there is a day in which Jensen returns — which I think is pretty unlikely, especially because the investigation into how much and who knew what about chips being sold, allegedly, secretly to China. We don’t know the full picture of that yet. But even if they did have the full picture, they want to present control, and they definitely don’t want to appear like they have deference to some other tech billionaire out there.
+
+Tim: I’m sure they’re looking at what happened at OpenAI and not wanting to repeat that.
+
+Anthony: I imagine the dynamic’s a little bit different, since Nvidia is a public company. So, I’m not an expert on this, but I would guess it would be much harder for you Jensen Huang to come back and just toss out a bunch of board members.
+
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.
+
+Anthony Ha is TechCrunch’s weekend editor. Previously, he worked as a tech reporter at Adweek, a senior editor at VentureBeat, a local government reporter at the Hollister Free Lance, and vice president of content at a VC firm. He lives in New York City.
+
+You can contact or verify outreach from Anthony by emailing [email protected] .",NVIDIA; OpenAI,deterministic,2026-11-22T15:26:46Z
+1.0,NEWS,The Verge AI,https://www.theverge.com/tech/1039554/un-regulations-killer-robots,The UN fails to agree on rules regulating ‘killer robots’,2026-11-21T20:03:37Z,published-date,"One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called ""killer robots."" Eventually, representatives left the meetings agreeing to ""start discussing options"" after a largely fruitless week of negotiations. According to NPR: Before the negotiations got underway, the [&#8230;]","Countries agree to ‘start discussing options’ for rules around autonomous weapons.
+
+Countries agree to ‘start discussing options’ for rules around autonomous weapons.
+
+One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called “killer robots.” Eventually, representatives left the meetings agreeing to “start discussing options” after a largely fruitless week of negotiations.
+
+Before the negotiations got underway, the International Committee of the Red Cross, the guardian of the Geneva Conventions, said it was urgent for legally binding rules to be drafted within a year. That call was backed by the U.N. secretary-general and by Pope Leo.
+
+The compromise reached was that countries would instead have two years to propose regulations. Negotiations between countries on which regulations to adopt and how to enforce them will likely drag on well beyond that. Additionally, room was left for some of those yet-to-be-adopted regulations to remain “optional.”
+
+Humanitarian organizations and some countries see a need to urgently adopt legally binding rules as semi-autonomous weapons and drones have been responsible for a significant number of civilian deaths in conflicts around the globe, including in Ukraine , Gaza , and Sudan.
+
+According to NPR , Russia, Israel, and the US proved to be the primary obstructions:
+
+On day one, Russia delayed proceedings by objecting to the meeting’s agenda. Then the United States proposed a five-year window to discuss nonbinding, optional guidelines for autonomous weapons.",,deterministic,2026-11-22T15:26:47Z
+1.0,NEWS,TechCrunch AI,https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/,Here are the top AI agents that can live in your text messages,2026-11-21T17:00:00Z,published-date,"We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.","Rather than downloading another app, a growing number of agents can simply be texted like an ordinary person.
+
+You text it what you need, and it can remember context, connect to the apps and services you already use, and complete tasks on your behalf. That can mean scheduling an appointment, organizing a calendar, researching a trip, sending an email, making a reservation, shopping online, or reminding you about something days later.
+
+While Instinct is one of the buzziest AI agents at present, thanks to its $10 billion valuation after its latest funding round of $1 billion, there are many others also making a play for this space.
+
+Below are the most notable options so far, from general-purpose personal assistants to agents designed for families, travel, and work.
+
+Ask Proxy ’s biggest differentiator is that it “thinks like a woman,” meaning it aims to anticipate your needs before you even ask, the company explains on its website.
+
+It works like a chatbot you can text like a friend, whether you need gift ideas, help planning an event, or recommendations for things to do that weekend. You can ask it to add important dates to your calendar, set reminders, or help with everyday decisions. You can also send it photos, like an empty table, to figure out how to decorate the table for a dinner party.
+
+Unlike a typical chatbot, Ask Proxy also takes a proactive approach. It can reach out when it notices something you might forget or when it comes across a new activity, restaurant, or experience you might enjoy.
+
+There’s also a work-focused version, which the company explains “gets employees back to work faster, while keeping personal data off company systems.”
+
+The personal version costs $1 per day. For businesses, pricing starts at $15 per employee per month for large companies and $23 per employee per month for small teams with fewer than 49 employees.
+
+Ask Proxy works over SMS. You can text “start” to 820-732-2625.
+
+Caddy is an AI assistant that turns the information scattered across your phone into things you can actually act on. It lives in iMessage for iPhone users and RCS for Android users, so there’s no separate app or inbox to constantly check.
+
+For instance, an email contains an appointment that needs to be added to your calendar or a friend sends a list of things to pick up. Instead of worrying about all the details getting buried, Caddy connects to your calendars and conversations, then identifies things that may require action. It can add events to your calendar, set reminders, keep track of follow-ups, and even do research for you.
+
+Caddy has been available in public beta since April 2026.
+
+Comma is designed to manage tasks across both work and everyday life. Comma carries tasks through to completion, checking its own work and determining when a task is finished.
+
+Completed work is surfaced for review when a decision or approval is needed. It also proactively notifies users and recommends the next steps.
+
+It can work across a user’s browser, computer, and files, while remaining accessible remotely through messaging apps such as Signal, Telegram, and WeChat. Comma maintains context and memory across devices and conversations, and can deliver daily briefings, flag urgent matters, and summarize recorded calls.
+
+Fambot is an AI-powered “chief of staff” for families, designed to bring together the many moving parts of family life, including school communications, sports activities, meal planning, calendars, and other day-to-day responsibilities, and turn them into an organized plan.
+
+The service is designed to work across both an app and text messages. Fambot is available on iOS devices, Android devices, and the web, and families can also interact with it directly over SMS. Every night, Fambot automatically sends a summary of the following day, including upcoming events, to-dos, and details such as school uniform or packing requirements. Parents can reply to those messages to ask questions, check information, or make changes to their calendar.
+
+Fambot currently connects to Gmail, Google Calendar, Outlook, and WhatsApp, with support for Apple Calendar planned for the future.
+
+The company launched in beta in early September 2026 and has raised $3.5 million in pre-seed funding. The service is currently free during the beta period, but Fambot expects to eventually charge roughly the equivalent of a Netflix subscription.
+
+Folk is designed to be an AI assistant you can reach through iMessage, WhatsApp, and Telegram. It can remember personal context, manage reminders, research topics, track flights, handle email, and perform real-world tasks such as restaurant reservations.
+
+One distinction is that Folk runs on its own private cloud computer. It can also run code and execute multi-step tasks rather than merely responding conversationally.
+
+Folk launched its beta in May 2026, and it’s available for free but also offers a Pro subscription for $8.33/month if you want unlimited tasks running in the background.
+
+Haven distinguishes itself by presenting the concept of a “digital twin” rather than merely serving as a text-based AI assistant.
+
+According to the company, Haven understands and adapts to your preferences, routines, and decision-making styles, creating a personalized memory graph based on your interactions. As the company describes , “A personal assistant knows what you asked it to do. Haven knows what you would do and how you would do it.”
+
+Notably, the company envisions future features that customize your experiences across devices, like TV and car.
+
+Currently, Haven is available for free in beta on iPhone and Android devices, and the web. You can also reach Haven by calling or texting (435) 260-6500.
+
+Instinct first made headlines after raising $350 million at a $2.5 billion valuation. In September 2026, it raised $1 billion , valuing it at $10 billion.
+
+The always-available agent can take actions on your behalf, rather than simply answer questions. Users can communicate with Instinct by text or voice and connect it to the apps and services they already use, such as email, calendar, Google Workspace, and more. The company says early users have used Instinct for tasks ranging from planning trips and buying groceries to booking tickets and canceling subscriptions.
+
+In September, Instinct began giving users dedicated email addresses for their assistants. The idea is to let Instinct create and manage accounts on a user’s behalf without filling the user’s personal inbox. The agent can use its address to sign up for services, contact businesses, follow up on requests, and handle tasks that require an email account. (However, this level of autonomy has also raised concerns about privacy and security .) It’s also begun rolling out support for placing calls .
+
+Powered by Hermes Agent, Iris is designed to let users delegate tasks to an AI assistant directly through iMessage. Users can connect the apps they use and hand over a task with a simple message. The agent then works through the required steps, while retaining relevant context from previous interactions. It’s also designed to follow up with users proactively rather than waiting for another request.
+
+Martin is a general-purpose personal assistant reachable through SMS as well as phone, WhatsApp, email, Slack, and its own iOS app.
+
+It can help manage calendars, email, reminders, tasks, notes, and communications. It can also act on behalf of users by sending messages or making phone calls, while providing daily summaries of what needs attention.
+
+It’s a bit on the pricier side, with subscriptions starting at $21 per month.
+
+Maverick describes itself as an “AI companion who lives in your texts,” acting as a personal assistant that helps manage everyday tasks directly from your messages.
+
+It can fix typos, cancel subscriptions, schedule meetings from voice notes, and help group chats settle on a date for an event. One notable feature is that Maverick asks for your permission before taking action.
+
+The platform also offers hundreds of integrations, including Discord, Gmail, and Slack, allowing it to connect with the apps you already use.
+
+It’s currently in beta and free to use on iMessage. There’s also a Pro version for €27 per month (or approximately $30.25 USD), which includes 500 tasks a month,  20 connected apps, scheduled tasks, and memory.
+
+Miso takes the personal-assistant concept and applies it specifically to travel.
+
+It operates through iMessage and combines AI trip planning with support from a dedicated travel team. Users can arrange flights through messaging while Miso takes into account their travel preferences, loyalty points, and other priorities. Miso also gives travelers access to trip details and flight updates, along with personalized recommendations.
+
+Ohai is another family assistant focused on helping households manage the constant stream of information and tasks involved in everyday family life.
+
+Users can send messages, forward emails, or make voice requests, and the assistant can transform them into schedules, reminders, and plans. It can also coordinate calendars, household chores, and meals across multiple members of a family.
+
+It includes a free basic option, but also offers different subscriptions based on family size, starting at $9.99 per month.
+
+Orbits also has an AI assistant that is focused on the household.
+
+It works through both the Orbits app and text messaging, and can bring together calendars, lists, and conversations while also carrying out tasks for you. That can include searching the web, making purchases, booking restaurants, changing appointments, and requesting quotes for household services.
+
+Additionally, Orbits can remind family members about chores, communicate with service providers, and help coordinate responsibilities beyond the immediate household.
+
+Orbits is backed by investors like Andreessen Horowitz (a16z) Speedrun fund, N49P, and Garage Capital.
+
+Users can interact with Pally as they would with a friend while giving it access to the apps they already rely on. The assistant can connect information spread across services such as WhatsApp, Gmail, calendars, and Google Drive, helping users keep track of plans, receipts, dates, files, and other details.
+
+There’s a free plan available. It works over iMessage, RCS, and Telegram.
+
+Poke launched in March 2026 as a general-purpose assistant that you can reach through text messaging. It can handle tasks involving calendars, planning, health and fitness, smart-home controls, photos, and other everyday activities.
+
+Poke became particularly notable in June 2026 when Apple approved Poke as the first AI agent on the Apple Messages for Business platform. A month later, parent company The Interaction Company of California was acquired by AI coding startup Cognition in a deal valued in the low nine figures.
+
+Rene is an AI personal assistant designed to be a user’s “best contact” rather than another productivity agent. It’s text-based and can turn natural-language conversations into tasks, reminders, summaries, and other follow-up actions. Rene also maintains context across conversations, allowing it to remember details and surface things that may need attention later.
+
+Additionally, it has a browser, can write code, shop for you, as well as create slides and images.
+
+Rene is currently available on iMessage, Telegram, and WhatsApp.
+
+Instead of waiting for users to open an app, Skye is an “ agentic homescreen ” for the iPhone that analyzes information from connected services and surfaces what it thinks is relevant through contextual cards, suggestions, and daily briefings. The assistant can generate audio briefings, prepare information ahead of meetings, surface reminders, and identify potentially useful information.
+
+The company, Signull Labs, raised about $3.6 million in seed funding in 2025. It entered private testing and beta in April 2026, and hasn’t yet announced a public release date.
+
+Stanley is an AI content assistant aimed at content c",,deterministic,2026-11-22T15:26:46Z
+1.0,NEWS,TechCrunch AI,https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/,Is selling an AI version of your face to this microdrama startup the future of Hollywood?,2026-11-21T16:00:00Z,published-date,"An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.","For the most part, the content offered by the microdrama startup Shortical is indistinguishable from the rest of its industry . The company produces soapy, melodramatic storylines — almost always risqué romances — that, in bite-sized two-minute episodes, compel viewers to stay glued to their phones so as not to miss the latest twist in a tawdry, cliff-hanger-happy saga.
+
+The primary way that Shortical — which was founded last January — makes money is through subscriptions. Typically, the first 7-10 episodes of a micro-drama are free. After that, if the user wants to finish the series, they have to pay a small monthly fee which unlocks access to all of the site’s content.
+
+Over the past year, the company has churned out a gush of popular live-action romances like “Crossing the Line with My Neighbor,” “Accidentally Married My Boss,” and “Spoiled by My Billionaire Sugar Daddy.”
+
+Lately, however, the company’s homepage is covered in AI-generated content. The reason isn’t exactly hard to figure out: the production overhead for AI content is substantially less than live-action. The profit potential, meanwhile, is substantially higher, if you can draw an audience.
+
+Its latest microdrama premiered in Los Angeles last week. The series, called “Inevitable,” stars Aki Avni, an Israeli film and television star who has been visible in American TV shows for years (he had a stint on Fox’s 9/11-era thriller “24” years ago) but is now trying something largely unheard of in modern Hollywood: licensing his face to Shortical for the sake of its AI content.
+
+The project, which is wholly AI, used Avni’s face to create a digital avatar of him. In “Inevitable,” he plays himself – in a very meta plot in which he — the actor Aki Avni — licenses his face to a film studio, after which thriller-like antics ensue.
+
+This is Shortical’s first foray into such a licensing deal, but it likely won’t be their last.
+
+In a phone interview, Avni told TechCrunch that he found the project both nerveracking and exciting. “Look, it’s a new era for artists,” the actor said. “AI is a new kind of art. It’s a new format. It’s always great to be the pioneer in something.”
+
+Guy Shimoni, the CEO of Shortical, emphasized the creative potential of the new tool. “One of the things that AI does is it enables smaller teams to be able to produce these movie-scale productions,” Shimoni said. “When we were doing mobile-first live action, we were limited by budget, but now we can serve them with epic fantasies. We have kingdoms and dragons. We have superheroes. We have werewolves.”
+
+But AI-generated romances involving werewolves — who, exactly, is watching this kind of thing?
+
+Apparently, a lot of people. While China boasts the biggest microdrama audience globally, Shimoni says that most of his platform’s viewers are actually in the U.S. The industry’s viewer demographic skews heavily female . Many viewers may watch them to wind down at night , getting minor dopamine hits as they drift off to sleep. Many of the AI-generated programs that already exist on the company’s website appear to have millions of views.
+
+Now, Shortical is betting on the creation of a new generation of creators — those who, like Avni, are willing to surrender their likenesses for compensation. “ LICENSE YOUR FACE ” Shortical’s website advertises, explaining that interested parties can submit their social media handles to the company, which will then decide whether to offer them “a contract setting out the terms” of using their persona in the company’s AI-generated content.
+
+A company rep told TechCrunch that this “offering is still in its early days and hasn’t yet resulted in any signed contracts.” They added: “The series with Aki is the first time Shortical has used a real person’s likeness, and it was done through a direct agreement with him rather than through the platform. Shortical hopes the series will draw more attention to face licensing and plans to promote the offering more actively following this launch.”
+
+Much of this trend has already taken hold in China where the microdrama industry originated, where AI-generated content is big, and where face-licensing is already a trend. Although the trend may not be a particularly profitable one for creators. A recent report in Rest of World found that Microdrama firms were paying people “between US$15 to US$700 to license their facial likenesses.”
+
+How much money is Shortical offering for its face-licensing deals? The company isn’t saying. As for if Shortical will offer royalty-based compensation for creators — like the residual system in television, “It’s a case by case [basis],” Shimoni answers vaguely.
+
+A Shortical representative further explained to TechCrunch that the company didn’t want to “share a specific figure” for Avni’s particular contract. However, the person said, he came “on as a partner in the project, and his compensation was in line with industry standards for a comparable non-AI acting role.”
+
+For other actors, however, the deals may be quite different. Plus, many creatives are understandably unsettled by signs of automation creeping into their industry. Until recently, microdramas seemed like a safe, entry-level gateway into the entertainment industry, where young actors could gain experience on sets and hone their craft. Now, companies are downsizing and producing content that doesn’t even require real actors.
+
+Jennifer Cooper, a longtime fan of the industry and founder of the consultancy firm Vertical Drama Love, notes that there’s a lot of distrust of AI — both from audiences and within the microdrama industry itself.
+
+“Everyone’s been impacted by AI,” she said. “A lot of us have either lost work to AI or can see that it’s devastated this industry — [taking microdramas] from something that was a rare thing in the world, that was in growth, and providing work, particularly for young people…[and now] you know, it’s been decimated.”
+
+Questions of consent with AI likenesses have also dogged the industry (some creators claim they have had their likenesses stolen ), which is something that Shortical is obviously trying to address with its new face-licensing endeavor.
+
+Yet these licensing deals could also help to gig-ify the industry, creating a scenario in which creators pay a distributor for the chance to platform their content (or their face), then receive payouts based on the audience engagement they’re allowed to generate. Shortical recently partnered with a company called Payouts.com, which describes itself as a “payout infrastructure platform powering creator and gig economy disbursements at scale.” The plan is to create a system by which creatives can seamlessly interact with Shortical’s platform and get paid.
+
+Cooper believes the push towards AI in the industry is driven by broader financial trends. Most of the microdrama business is led by startups, and VCs love to hear a growth game plan involving automation. “For anyone to get investment at the moment in microdramas, they’ve got to mention the word AI,” she says. “It’s like AI equals gold in everyone’s eyes.”
+
+Despite all the investment in this space, Cooper seems skeptical that there is actually a huge audience for this kind of content. “Some of it does get views. A lot of it doesn’t,” she said, of the AI content. “I think it’s being pushed on an audience more than there is an audience demand or wish for it.”
+
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.",,deterministic,2026-11-22T15:26:46Z

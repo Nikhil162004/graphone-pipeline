@@ -1,0 +1,18 @@
+{
+  "ranAt": "2026-11-22T15:26:48Z",
+  "stage": "all",
+  "tabs": {
+    "Startups": 1100,
+    "Products": 1100,
+    "Research Papers": 1100,
+    "Jobs": 28,
+    "News": 6
+  },
+  "mappingEntries": 1708,
+  "http": {
+    "requests": 86,
+    "retries": 0,
+    "failures": 0
+  },
+  "workbook": "output/workbook.xlsx"
+}
