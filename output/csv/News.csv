@@ -33,7 +33,7 @@ Before long, we’re going to see a lot of ESP32 devices turned into more consum
 
 At the same time, we’re already seeing some vibe hackers turn into proper software vendors. Gathin, for instance, has spent a lot of time reckoning with the responsibility he feels for what happens when people use CleanYourTV to hack their televisions. He’s tweaked the prompts he shares to first take a backup of your TV’s software in order to make it easy to restore if something goes wrong, and to make note of every change it makes along the way. The CleanYourTV system also checks its progress as it goes and spins up agents to manually test if something has gone wrong, and Gathin hopes it’s increasingly foolproof.
 
-But it’s not foolproof. It might never be. Devices change all the time; every software update introduces new possibilities and new problems. So Gathin recommends the same thing I hear from vibe coders and vibe hackers all the time: Never give the bots access to something you can’t afford to lose. “Even for fiddling with stuff,” he says, “I have an external computer which runs through Linux. So I just use it like a sandbox environment to test things out.” If you’re going to try and vibe-hack your phone (which lots of people are doing ) or your computer (which lots of people are also doing ), do it carefully. And make lots of backups.",,deterministic,2026-11-22T15:26:47Z
+But it’s not foolproof. It might never be. Devices change all the time; every software update introduces new possibilities and new problems. So Gathin recommends the same thing I hear from vibe coders and vibe hackers all the time: Never give the bots access to something you can’t afford to lose. “Even for fiddling with stuff,” he says, “I have an external computer which runs through Linux. So I just use it like a sandbox environment to test things out.” If you’re going to try and vibe-hack your phone (which lots of people are doing ) or your computer (which lots of people are also doing ), do it carefully. And make lots of backups.",,deterministic,2026-11-22T15:35:17Z
 1.0,NEWS,TechCrunch AI,https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/,Signal restricts mobile screenshots as it confronts ‘existential threat’ of AI surveillance,2026-11-21T21:37:10Z,published-date,Signal is limiting users' ability to take screenshots in both its Android and iOS apps.,"Signal announced Friday that it’s limiting users’ ability to take screenshots within the secure messaging app — a response to what President Meredith Whittaker described as the “existential threat” of operating systems that integrate agentic AI.
 
 Whittaker wrote that by giving AI agents the ability to “scan” the information on users’ screens, Windows, Android, and macOS/iOS “are undermining Signal’s ability to independently guarantee privacy.”
@@ -42,7 +42,7 @@ Whittaker wrote that by giving AI agents the ability to “scan” the informati
 
 Signal already sought to limit these risks by blocking screenshots of its Windows app by default. Now it’s adding similar restrictions in Android and iOS.
 
-That said, users can disable this setting if they wish, which Whittaker said would “break our privacy guarantees.” She also admitted this is an “incomplete” solution, as it doesn’t “address other more sneaky ways AI agents could potentially access application data.”",,deterministic,2026-11-22T15:26:46Z
+That said, users can disable this setting if they wish, which Whittaker said would “break our privacy guarantees.” She also admitted this is an “incomplete” solution, as it doesn’t “address other more sneaky ways AI agents could potentially access application data.”",,deterministic,2026-11-22T15:35:17Z
 1.0,NEWS,TechCrunch AI,https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/,A tale of two Nvidias,2026-11-21T21:07:42Z,published-date,We got two very different pictures of Nvidia —  the company’s latest earnings report vs. the tech executives loudly calling for Jensen Huang’s return.,"We got two very different pictures of Nvidia this week, depending on whether you were focused on the company’s latest earnings report or the tech executives loudly calling for former CEO Jensen Huang’s return.
 
 On the latest episode of TechCrunch’s Equity podcast , Kirsten Korosec, Tim De Chant, and I discussed the latest news from the AI chipmaker, which reported soaring revenue and insisted that it has no plans for Huang to return.
@@ -87,7 +87,7 @@ When you purchase through links in our articles, we may earn a small commission 
 
 Anthony Ha is TechCrunch’s weekend editor. Previously, he worked as a tech reporter at Adweek, a senior editor at VentureBeat, a local government reporter at the Hollister Free Lance, and vice president of content at a VC firm. He lives in New York City.
 
-You can contact or verify outreach from Anthony by emailing [email protected] .",NVIDIA; OpenAI,deterministic,2026-11-22T15:26:46Z
+You can contact or verify outreach from Anthony by emailing [email protected] .",NVIDIA; OpenAI,deterministic,2026-11-22T15:35:17Z
 1.0,NEWS,The Verge AI,https://www.theverge.com/tech/1039554/un-regulations-killer-robots,The UN fails to agree on rules regulating ‘killer robots’,2026-11-21T20:03:37Z,published-date,"One of the items on the agenda for UN diplomats meeting in Geneva this week was working towards rules regarding the use of autonomous weapons, or so-called ""killer robots."" Eventually, representatives left the meetings agreeing to ""start discussing options"" after a largely fruitless week of negotiations. According to NPR: Before the negotiations got underway, the [&#8230;]","Countries agree to ‘start discussing options’ for rules around autonomous weapons.
 
 Countries agree to ‘start discussing options’ for rules around autonomous weapons.
@@ -102,7 +102,7 @@ Humanitarian organizations and some countries see a need to urgently adopt legal
 
 According to NPR , Russia, Israel, and the US proved to be the primary obstructions:
 
-On day one, Russia delayed proceedings by objecting to the meeting’s agenda. Then the United States proposed a five-year window to discuss nonbinding, optional guidelines for autonomous weapons.",,deterministic,2026-11-22T15:26:47Z
+On day one, Russia delayed proceedings by objecting to the meeting’s agenda. Then the United States proposed a five-year window to discuss nonbinding, optional guidelines for autonomous weapons.",,deterministic,2026-11-22T15:35:17Z
 1.0,NEWS,TechCrunch AI,https://techcrunch.com/2026/11/21/all-the-ai-agents-that-can-live-in-your-text-messages/,Here are the top AI agents that can live in your text messages,2026-11-21T17:00:00Z,published-date,"We created a list of the most notable AI agents that can live in your text messages, from general assistants to agents designed for families, travel, and work.","Rather than downloading another app, a growing number of agents can simply be texted like an ordinary person.
 
 You text it what you need, and it can remember context, connect to the apps and services you already use, and complete tasks on your behalf. That can mean scheduling an appointment, organizing a calendar, researching a trip, sending an email, making a reservation, shopping online, or reminding you about something days later.
@@ -215,7 +215,7 @@ Instead of waiting for users to open an app, Skye is an “ agentic homescreen �
 
 The company, Signull Labs, raised about $3.6 million in seed funding in 2025. It entered private testing and beta in April 2026, and hasn’t yet announced a public release date.
 
-Stanley is an AI content assistant aimed at content c",,deterministic,2026-11-22T15:26:46Z
+Stanley is an AI content assistant aimed at content c",,deterministic,2026-11-22T15:35:17Z
 1.0,NEWS,TechCrunch AI,https://techcrunch.com/2026/11/21/is-selling-an-ai-version-of-your-face-to-this-microdrama-startup-the-future-of-hollywood/,Is selling an AI version of your face to this microdrama startup the future of Hollywood?,2026-11-21T16:00:00Z,published-date,"An actor has licensed his face to a microdrama startup — in a trend that's already popular in China. Experts question the long-term consequences if this becomes a trend in Hollywood, too.","For the most part, the content offered by the microdrama startup Shortical is indistinguishable from the rest of its industry . The company produces soapy, melodramatic storylines — almost always risqué romances — that, in bite-sized two-minute episodes, compel viewers to stay glued to their phones so as not to miss the latest twist in a tawdry, cliff-hanger-happy saga.
 
 The primary way that Shortical — which was founded last January — makes money is through subscriptions. Typically, the first 7-10 episodes of a micro-drama are free. After that, if the user wants to finish the series, they have to pay a small monthly fee which unlocks access to all of the site’s content.
@@ -262,4 +262,4 @@ Cooper believes the push towards AI in the industry is driven by broader financi
 
 Despite all the investment in this space, Cooper seems skeptical that there is actually a huge audience for this kind of content. “Some of it does get views. A lot of it doesn’t,” she said, of the AI content. “I think it’s being pushed on an audience more than there is an audience demand or wish for it.”
 
-When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.",,deterministic,2026-11-22T15:26:46Z
+When you purchase through links in our articles, we may earn a small commission . This doesn’t affect our editorial independence.",,deterministic,2026-11-22T15:35:17Z

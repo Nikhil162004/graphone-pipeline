@@ -30,7 +30,7 @@ from src.llm_engine import LlmEngine
 from src.resolver import EntityResolver
 from src.sources.jobs import fetch_jobs
 from src.sources.news import fetch_news
-from src.sources.papers import fetch_papers
+from src.sources.papers import fetch_papers, fetch_pwc_example
 from src.sources.products import fetch_products
 from src.sources.startups import fetch_startups
 
@@ -62,7 +62,13 @@ async def _run(stage: str) -> dict:
         if stage in ("all", "phase1"):
             records += await fetch_startups(http, resolver)
             records += await fetch_products(http, resolver)
-            records += await fetch_papers(http)
+            paper_records = await fetch_papers(http)
+            records += paper_records
+            example = await fetch_pwc_example(http)  # the brief's worked example, for real
+            if example and all(
+                r["source"]["url"] != example["source"]["url"] for r in paper_records
+            ):
+                records.append(example)
         if stage in ("all", "phase2"):
             records += await fetch_jobs(http, resolver, settings.freshness_hours)
             records += await fetch_news(http, resolver, engine, settings.freshness_hours)

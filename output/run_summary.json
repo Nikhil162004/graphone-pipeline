@@ -1,16 +1,16 @@
 {
-  "ranAt": "2026-11-22T15:26:48Z",
+  "ranAt": "2026-11-22T15:35:19Z",
   "stage": "all",
   "tabs": {
     "Startups": 1100,
     "Products": 1100,
-    "Research Papers": 1100,
+    "Research Papers": 1101,
     "Jobs": 28,
     "News": 6
   },
   "mappingEntries": 1708,
   "http": {
-    "requests": 86,
+    "requests": 90,
     "retries": 0,
     "failures": 0
   },

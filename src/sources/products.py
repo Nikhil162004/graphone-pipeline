@@ -10,6 +10,7 @@ into this same interface and populate the other enum values.
 """
 from __future__ import annotations
 
+import asyncio
 import logging
 
 from ..http_client import HttpClient, HttpStatusError
@@ -24,20 +25,22 @@ SEARCHES = [None, "llm", "chatbot", "agent", "diffusion", "image generation", "t
 
 
 async def fetch_products(http: HttpClient, resolver: EntityResolver, target: int = 1100) -> list[dict]:
-    by_id: dict[str, dict] = {}
-    for query in SEARCHES:
+    async def _query(query):
         url = f"{API}?limit=1000&sort=likes&direction=-1"
         if query:
             url += f"&search={query.replace(' ', '%20')}"
         try:
             spaces = await http.get(url, expect="json")
+            return spaces if isinstance(spaces, list) else []
         except HttpStatusError as err:
             log.warning("spaces query %r failed: %s", query, err)
-            continue
-        if isinstance(spaces, list):
-            for space in spaces:
-                if isinstance(space, dict) and space.get("id") and not space.get("private"):
-                    by_id[space["id"]] = space
+            return []
+
+    by_id: dict[str, dict] = {}
+    for spaces in await asyncio.gather(*(_query(q) for q in SEARCHES)):
+        for space in spaces:
+            if isinstance(space, dict) and space.get("id") and not space.get("private"):
+                by_id[space["id"]] = space
     ranked = sorted(by_id.values(), key=lambda s: s.get("likes", 0), reverse=True)
     log.info("products: %d unique spaces merged from %d queries", len(ranked), len(SEARCHES))
 

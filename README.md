@@ -12,7 +12,7 @@ anywhere: if a value is in the output, a source said it.
 |---|---|---|
 | Startups | **1,100** | unique companies, canonical names, source URL each |
 | Products | **1,100** | unique AI products, canonical owner, pricing enum |
-| Research Papers | **1,100** | **1,100/1,100 with GitHub repo + star count** |
+| Research Papers | **1,101** | **1,101/1,101 with GitHub repo + star count** (incl. the brief's example task, extracted literally) |
 | Jobs | 28 | every date provably inside the last 24 h (61 stale dropped) |
 | News | 6 | every date provably inside the last 24 h, full text stored |
 | Entity Mapping Log | 1,708 | raw → canonical, with method and match score |
@@ -47,15 +47,25 @@ route a source already offers. Startups come from the Y Combinator directory as 
 bulk JSON document (~5k companies in one request; AI-tagged companies ranked first).
 Products are Hugging Face Spaces (the largest public directory of live AI products),
 merged from a top-by-likes query plus nine topical searches and de-duplicated. Papers
-come from **Hugging Face Papers walked day-by-day** — Papers With Code, the brief's
-example source, was sunset by Meta in 2025 and its API no longer answers, so the
-paper → GitHub repo → star-count correlation it pioneered is sourced from HF records,
-which carry `githubRepo` and `githubStars` natively. Stars are HF's recorded counts,
-spot-verified against live GitHub (sampled repos agreed within ±8 stars; the difference
-is repos gaining stars between snapshots, and the exact-refresh path is the GitHub API
-when a token is configured). The walk pattern (backwards from yesterday, resume by
-cursor) is the same one a daily job uses. The architecture scales to 500k+ by
-configuration — queue-partitioned cursors per host — see `architecture.pdf` §2.
+come from **Hugging Face Papers walked day-by-day** — HF records carry `githubRepo`
+and `githubStars` natively, which is what makes the paper → repo → star-count
+correlation honest at 1,000+ scale. Stars are HF's recorded counts, spot-verified
+against live GitHub (sampled repos agreed within ±8 stars; the difference is repos
+gaining stars between snapshots, and the exact-refresh path is the GitHub API when a
+token is configured). The walk pattern (backwards from yesterday, resume by cursor) is
+the same one a daily job uses. The architecture scales to 500k+ by configuration —
+queue-partitioned cursors per host — see `architecture.pdf` §2.
+
+The brief's example task is also executed literally, as record #1,101:
+`https://paperswithcode.co/paper/98456` still answers honest requests with full
+server-rendered metadata even though its old API is gone, so the pipeline scrapes that
+page for the paper ("GLM-5.2: Built for Long-Horizon Tasks", 2026-06-16), selects the
+paper's own repository from the page's five GitHub links by title-token match
+(`zai-org/GLM-5`, not a popular library it happens to link), and refreshes the star
+count exactly from the GitHub REST API (7,476 at reference run time). Zero title
+overlap yields no claim at all rather than a confident-looking wrong repo, and the
+page lists no authors, so `authors` stays empty instead of being invented. The repo
+selection rule is locked down by a unit test using the page's actual links.
 
 **Phase II — fresh signals.** Five news sources (TechCrunch AI, OpenAI News, Hugging
 Face Blog, The Verge AI, MIT Technology Review AI — VentureBeat's feed returned 429
@@ -131,6 +141,6 @@ src/
   sources/                 startups, products, papers, jobs, news connectors
   export_workbook.py       six-tab workbook + CSV mirror
   make_architecture_pdf.py regenerates architecture.pdf
-tests/                     dates, resolver, chunking (16 tests)
+tests/                     dates, resolver, chunking, example-repo choice (19 tests)
 output/                    workbook.xlsx, csv/, records.json, run_summary.json
 ```
